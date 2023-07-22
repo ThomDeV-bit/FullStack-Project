@@ -48,7 +48,7 @@ width:${(props) => props.width ? props.width : "auto"};
 export const Tbody = styled.tbody``
 
 
-const Grid = ([{users}]) => {
+const Grid = ({users}) => {
     return (
         <Table>
             <Thead>
@@ -61,9 +61,9 @@ const Grid = ([{users}]) => {
                 </Tr>
             </Thead>
             <Tbody>
-                {users.map((item, i) => (
+                {users?.map((item, i) => (
                     <Tr key={i}>
-                        <Td width="30%">{item.nome}</Td>
+                        <Td width="30%">{item.user_name}</Td>
                         <Td width="30%">{item.mail}</Td>
                         <Td width="30%" onlyWeb>
                             {item.fone}

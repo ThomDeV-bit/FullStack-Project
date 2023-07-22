@@ -9,4 +9,4 @@ app.use(cors())
 
 app.use('/',userRouter)
 
-app.listen(3000,()=>{console.log('Server running')})
+app.listen(3001,()=>{console.log('Server running')})
