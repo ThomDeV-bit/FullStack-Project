@@ -48,9 +48,12 @@ height: 31px;
 `;
 
 const Form = () => {
-    const ref = useRef();
+
+    const ref = useRef()
+    console.log(ref)
     return (
-        <FormContainer ref={ref}>
+
+        <FormContainer ref = {ref}>
             <InputArea>
                 <Lable>Nome</Lable>
                 <InPut name="name" />
@@ -61,7 +64,7 @@ const Form = () => {
             </InputArea>
             <InputArea>
                 <Lable>Fone</Lable>
-                <InPut name="fone"/>
+                <InPut name="fone" />
             </InputArea>
             <Button type="submit">Confirm</Button>
         </FormContainer>
